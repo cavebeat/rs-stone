@@ -79,19 +79,18 @@ switch($action){
 		<td colspan="1"><a href="/kopimi/"><center><img src="kopimi.png" onmouseover="this.src='kopimi_color.png'" onmouseout="this.src='kopimi.png'" align="absmiddle" alt="kopimi" height="128" width="128"></a></center><center>Chatserver v06<BR>Kopimi</center></td>
 		<td colspan="1"><a href="/chatasaurus/"><center><img src="chatasaurus.png" onmouseover="this.src='chatasaurus_color.png'" onmouseout="this.src='chatasaurus.png'" align="absmiddle" alt="chatasaurus" height="128" width="128"></a></center><center>Chatserver v06<BR>Chatasaurus</center></td>
 		<td colspan="1"><a href="/telecomix/"><center><img src="telecomix.png" onmouseover="this.src='telecomix_color.png'" onmouseout="this.src='telecomix.png'" align="absmiddle" alt="chatasaurus" height="128" width="128"></a></center><center>Chatserver v06<BR>Telecomix</center></td>
-		<td colspan="1"><a href="https://retrochat.piratenpartei.at/"><center><img src="pirate.png" onmouseover="this.src='pirate_color.png'" onmouseout="this.src='pirate.png'" align="absmiddle" alt="pirate" height="128" width="128"></a></center><center>Chatserver v05<BR>RetroChat</center></td>
+		<td colspan="1"><a href="https://retrochat.piratenpartei.at/" target="_blank"><center><img src="pirate.png" onmouseover="this.src='pirate_color.png'" onmouseout="this.src='pirate.png'" align="absmiddle" alt="pirate" height="128" width="128"></a></center><center>Chatserver v05<BR>RetroChat</center></td>
 	</tr>
 
 <tr>
 <td colspan="5" ><center><table border="0" >
-	<tr><td colspan="2" >
+	<tr><td colspan="2" ><br>
 	<form method="post" action="?action=exec">
 		<fieldset>
 			<b>Open Port Check Tool</b>
 			<div>
-			<label>Your IP:</label>
-			<input name="ip" type="text" value="<?php print $ip; ?>"><BR>
-			<right><label>Port:</label></right>
+			<label>Your IP: </label><input name="ip" type="text" value="<?php print $ip; ?>"><BR>
+			<right><label>Port: </label></right>
 			<input name="port" type="text" value="<?php print $port; ?>"><BR>
 			<center><input type="submit" value="Check my Port" /></center>
 			</div>

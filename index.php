@@ -63,31 +63,6 @@ switch($action){
 		}
 	}
 	unset($line); // break the reference with the last element 
-
-/*
-
-
-
-
-
-
-*/
-
-
-/*			else{
-				foreach ($output as $line) {
-					if (strpos($line, 'subject=/') !== FALSE){
-						$user = $line ;
-					}
-					if (strpos($line, 'issuer=/') !== FALSE){
-						$location = $line ;
-					}
-				}
-				unset($value); // break the reference with the last element 
-			} */
-
-
-
 ?>
 
 
@@ -97,52 +72,37 @@ switch($action){
 <div align="center">
 
 <table border="0">
+	<tr><td colspan="5"><a href="https://retroshare.rocks/"><center><img src="retroshare-header.png" align="absmiddle" alt="RetroShare" ></td></tr>
+	<tr><td colspan="5"><center><b>Choose a Chatserver</b><BR><BR></center></td></tr>
 	<tr>
-		<td colspan="5"><a href="https://retroshare.rocks/"><center><img src="retroshare-header.png" align="absmiddle" alt="RetroShare" ></td>
-	</tr>
-	<tr>
-		<td colspan="5"><center><b>Choose a Chatserver</b><BR><BR></center></td>
-	</tr>
-	<tr>
-		<td colspan="1"><a href="/copyleft/"><center><img src="copyleft.png" align="absmiddle" alt="copyleft" height="128" width="128"></a></center><center>Chatserver<BR>Copyleft</center></td>
-		<td colspan="1"><a href="/kopimi/"><center><img src="kopimi.png" align="absmiddle" alt="kopimi" height="128" width="128"></a></center><center>Chatserver<BR>Kopimi</center></td>
-		<td colspan="1"><a href="/chatasaurus/"><center><img src="chatasaurus.png" align="absmiddle" alt="chatasaurus" height="128" width="128"></a></center><center>Chatserver<BR>Chatasaurus</center></td>
-		<td colspan="1"><a href="/telecomix/"><center><img src="telecomix.png" align="absmiddle" alt="chatasaurus" height="128" width="128"></a></center><center>Chatserver<BR>Telecomix</center></td>
-		<td colspan="1"><a href="https://retrochat.piratenpartei.at/"><center><img src="pirate.png" align="absmiddle" alt="pirate" height="128" width="128"></a></center><center>Chatserver<BR>Pirate Party</center></td>
-		<td colspan="1">
-</td>
-	</tr>
-	<tr>
-	<td> 
-	</td>
-<td colspan="3"  ><br>
-
-
-<form method="post" action="?action=exec">
-
-			<fieldset>
-				<b>Open Port Check Tool</b>
-				<div>
-					<label>Your IP:</label>
-					<input name="ip" type="text" value="<?php print $ip; ?>"><BR>
-				
-					<label>Port:</label>
-					<input name="port" type="text" value="<?php print $port; ?>"><BR>
-					<center><input type="submit" value="Check my Port" /></center>
-				</div>
-			</fieldset>
-		</form>
-
-		</td>
-		<td> 
-		</td>
-
-	
+		<td colspan="1"><a href="/copyleft/"><center><img src="copyleft.png" onmouseover="this.src='copyleft_color.png'" onmouseout="this.src='copyleft.png'" align="absmiddle" alt="copyleft" height="128" width="128"></a></center><center>Chatserver v06<BR>Copyleft</center></td>
+		<td colspan="1"><a href="/kopimi/"><center><img src="kopimi.png" onmouseover="this.src='kopimi_color.png'" onmouseout="this.src='kopimi.png'" align="absmiddle" alt="kopimi" height="128" width="128"></a></center><center>Chatserver v06<BR>Kopimi</center></td>
+		<td colspan="1"><a href="/chatasaurus/"><center><img src="chatasaurus.png" onmouseover="this.src='chatasaurus_color.png'" onmouseout="this.src='chatasaurus.png'" align="absmiddle" alt="chatasaurus" height="128" width="128"></a></center><center>Chatserver v06<BR>Chatasaurus</center></td>
+		<td colspan="1"><a href="/telecomix/"><center><img src="telecomix.png" onmouseover="this.src='telecomix_color.png'" onmouseout="this.src='telecomix.png'" align="absmiddle" alt="chatasaurus" height="128" width="128"></a></center><center>Chatserver v06<BR>Telecomix</center></td>
+		<td colspan="1"><a href="https://retrochat.piratenpartei.at/"><center><img src="pirate.png" onmouseover="this.src='pirate_color.png'" onmouseout="this.src='pirate.png'" align="absmiddle" alt="pirate" height="128" width="128"></a></center><center>Chatserver v05<BR>RetroChat</center></td>
 	</tr>
 
+<tr>
+<td colspan="5" ><center><table border="0" >
+	<tr><td colspan="2" >
+	<form method="post" action="?action=exec">
+		<fieldset>
+			<b>Open Port Check Tool</b>
+			<div>
+			<label>Your IP:</label>
+			<input name="ip" type="text" value="<?php print $ip; ?>"><BR>
+			<right><label>Port:</label></right>
+			<input name="port" type="text" value="<?php print $port; ?>"><BR>
+			<center><input type="submit" value="Check my Port" /></center>
+			</div>
+		</fieldset>
+	</form>
+	</td></tr>
+</table></center></td>
+</tr>
 
-	<tr>
-		<td colspan="5"  ><?php if($user): ?>
+
+<tr><td colspan="5" ><?php if($user): ?>
 			<p><?php //print $subject; 
 				echo '<center>';
  				echo "<font color='#00FF00'>" . "<B>"."Success: " . "</B>" . "</font>" . "I can see your service on " . "<B>". $ip. "</B>" . " on port (" ."<B>".$port. "</B>" .  ")"; 				print "<BR>" . "Your ISP is not blocking port " . $port ;				
@@ -169,10 +129,9 @@ switch($action){
 				echo '</center>';				
 				 ?></p>
 				<?php endif; ?>
+</td></tr>
 
 
-		</td>
-	</tr>
 
 </table>
 </div>

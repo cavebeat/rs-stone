@@ -101,7 +101,7 @@ switch($action){
 </tr>
 
 
-<tr><td colspan="5" ><?php if($user): ?>
+<tr><td colspan="5" ><?php if($gpgid): ?>
 			<p><?php //print $subject; 
 				echo '<center>';
  				echo "<font color='#00FF00'>" . "<B>"."Success: " . "</B>" . "</font>" . "I can see your service on " . "<B>". $ip. "</B>" . " on port (" ."<B>".$port. "</B>" .  ")"; 				print "<BR>" . "Your ISP is not blocking port " . $port ;				

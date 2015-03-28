@@ -101,14 +101,13 @@ switch($action){
 </tr>
 
 
-<tr><td colspan="5" ><?php if($gpgid): ?>
+<tr><td colspan="5" ><?php if($issuer): ?>
 			<p><?php //print $subject; 
 				echo '<center>';
+				print "<BR>" . "GPG-ID: " . $gpgid ;				
  				echo "<font color='#00FF00'>" . "<B>"."Success: " . "</B>" . "</font>" . "I can see your service on " . "<B>". $ip. "</B>" . " on port (" ."<B>".$port. "</B>" .  ")"; 				print "<BR>" . "Your ISP is not blocking port " . $port ;				
-				print "<BR>"."User: " . $user;	
-				print "<BR>" ."Location: " . $location;
-				//print "<BR>" . $issuer ;
-				print "<BR>" . "GPG-ID: " . $gpgid ;
+				if($user) print "<BR>"."User: " . $user;	
+				if($location) print "<BR>" ."Location: " . $location;
 				echo '</center>';				
 				 ?></p>
 				<?php endif; ?>		

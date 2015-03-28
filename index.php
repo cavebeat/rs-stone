@@ -51,12 +51,12 @@ switch($action){
 }
 
 	foreach ($output as &$line) {
-		if (strpos($line, 'subject=/CN') !== FALSE){
-			$subject = $line ;
-			$user = get_string_between($subject, "subject=/CN=", "/L=");
-			$i = strpos($subject, '/L=');
-			$location =  substr($subject, $i+3);		
-		}
+		//if (strpos($line, 'subject=/CN') !== FALSE){
+			//$subject = $line ;
+			//$user = get_string_between($subject, "subject=/CN=", "/L=");
+			//$i = strpos($subject, '/L=');
+			//$location =  substr($subject, $i+3);		
+		//}
 		if (strpos($line, 'issuer=/') !== FALSE){
 			$issuer = $line ;
 			$gpgid =  substr($issuer, 11);		
@@ -104,10 +104,10 @@ switch($action){
 <tr><td colspan="5" ><?php if($issuer): ?>
 			<p><?php //print $subject; 
 				echo '<center>';
-				print "<BR>" . "GPG-ID: " . $gpgid ;				
+				print "<BR>" . "GPG-ID: " . $gpgid . "<BR>";				
  				echo "<font color='#00FF00'>" . "<B>"."Success: " . "</B>" . "</font>" . "I can see your service on " . "<B>". $ip. "</B>" . " on port (" ."<B>".$port. "</B>" .  ")"; 				print "<BR>" . "Your ISP is not blocking port " . $port ;				
-				if($user) print "<BR>"."User: " . $user;	
-				if($location) print "<BR>" ."Location: " . $location;
+				//if($user) print "<BR>"."User: " . $user;	
+				//if($location) print "<BR>" ."Location: " . $location;
 				echo '</center>';				
 				 ?></p>
 				<?php endif; ?>		

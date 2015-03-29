@@ -75,11 +75,11 @@ switch($action){
 	<tr><td colspan="5"><a href="https://retroshare.rocks/"><center><img src="retroshare-header.png" align="absmiddle" alt="RetroShare" ></td></tr>
 	<tr><td colspan="5"><center><b>Choose a Chatserver</b><BR><BR></center></td></tr>
 	<tr>
-		<td colspan="1"><a href="/copyleft/"><center><img src="copyleft.png" onmouseover="this.src='copyleft_color.png'" onmouseout="this.src='copyleft.png'" align="absmiddle" alt="copyleft" height="128" width="128"></a></center><center>Copyleft v06<BR><font size="2">A104CD8BA3CA7224</font></center></td>
-		<td colspan="1"><a href="/kopimi/"><center><img src="kopimi.png" onmouseover="this.src='kopimi_color.png'" onmouseout="this.src='kopimi.png'" align="absmiddle" alt="kopimi" height="128" width="128"></a></center><center>Kopimi v06<BR><font size="2">EF0FC8E21CFE3DCE</font></center></td>
-		<td colspan="1"><a href="/chatasaurus/"><center><img src="chatasaurus.png" onmouseover="this.src='chatasaurus_color.png'" onmouseout="this.src='chatasaurus.png'" align="absmiddle" alt="chatasaurus" height="128" width="128"></a></center><center>Chatasaurus v06<BR><font size="2">1AC6DD5267D432A0</font></center></td>
+		<td colspan="1"><a href="/copyleft/"><center><img src="copyleft.png" onmouseover="this.src='copyleft_color.png'" onmouseout="this.src='copyleft.png'" align="absmiddle" alt="copyleft" height="128" width="128"></a></center><center>Copyleft v06<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"><font size="2"> 0xA104CD8BA3CA7224</font></center></td>
+		<td colspan="1"><a href="/kopimi/"><center><img src="kopimi.png" onmouseover="this.src='kopimi_color.png'" onmouseout="this.src='kopimi.png'" align="absmiddle" alt="kopimi" height="128" width="128"></a></center><center>Kopimi v06<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"><font size="2"> 0xEF0FC8E21CFE3DCE</font></center></td>
+		<td colspan="1"><a href="/chatasaurus/"><center><img src="chatasaurus.png" onmouseover="this.src='chatasaurus_color.png'" onmouseout="this.src='chatasaurus.png'" align="absmiddle" alt="chatasaurus" height="128" width="128"></a></center><center>Chatasaurus v06<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"><font size="2"> 0x1AC6DD5267D432A0</font></center></td>
 		//<td colspan="1"><a href="/telecomix/"><center><img src="telecomix.png" onmouseover="this.src='telecomix_color.png'" onmouseout="this.src='telecomix.png'" align="absmiddle" alt="chatasaurus" height="128" width="128"></a></center><center>Chatserver v06<BR>Telecomix</center></td>
-		<td colspan="1"><a href="https://retrochat.piratenpartei.at/" target="_blank"><center><img src="pirate.png" onmouseover="this.src='pirate_color.png'" onmouseout="this.src='pirate.png'" align="absmiddle" alt="pirate" height="128" width="128"></a></center><center>RetroChat v05<BR><font size="2">D084EAAD7A00DF6E</font></center></td>
+		<td colspan="1"><a href="https://retrochat.piratenpartei.at/" target="_blank"><center><img src="pirate.png" onmouseover="this.src='pirate_color.png'" onmouseout="this.src='pirate.png'" align="absmiddle" alt="pirate" height="128" width="128"></a></center><center>RetroChat v05<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"><font size="2"> 0xD084EAAD7A00DF6E</font></center></td>
 	</tr>
 
 <tr>
@@ -104,7 +104,7 @@ switch($action){
 <tr><td colspan="5" ><?php if($issuer): ?>
 			<p><?php //print $subject; 
 				echo '<center>';
-				print "<BR>" . "GPG-ID: " . $gpgid . "<BR>";				
+				print "<BR>" . "GPG-ID: " ."<img src='gnupg.png' align='absmiddle' alt='GPG-ID' height='20' width='15'>" ." 0x" . $gpgid . "<BR>";				
  				echo "<font color='#00FF00'>" . "<B>"."Success: " . "</B>" . "</font>" . "I can see your service on " . "<B>". $ip. "</B>" . " on port (" ."<B>".$port. "</B>" .  ")"; 				print "<BR>" . "Your ISP is not blocking port " . $port ;				
 				//if($user) print "<BR>"."User: " . $user;	
 				//if($location) print "<BR>" ."Location: " . $location;

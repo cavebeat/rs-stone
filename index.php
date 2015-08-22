@@ -88,6 +88,11 @@ switch($action){
 	</tr>
 
 
+<tr><td colspan="5" ><img src="tor.jpg" align="absmiddle" alt="Tor"> Hidden Service Chatserver<BR>
+<a href="http://udgdahofbq52bzxk.onion" target="_blank">http://udgdahofbq52bzxk.onion</a><BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"  ><font size="2"> 0x21473D694D79F48F</font></td></tr>
+<tr><td colspan="5" ><img src="onion.jpg" align="absmiddle" alt="Tor"> .onon Website and SourceCode Mirror<BR>
+<a href="http://rsweb4zpnr4c3jti.onion" target="_blank">http://rsweb4zpnr4c3jti.onion</a><BR><img src="git.png" align="absmiddle" alt="Git" height="20" width="15" ><a href="http://rsgitcndakghiw57.onion/" target="_blank">http://rsgitcndakghiw57.onion/</a></td></tr>
+
 <tr>
 <td colspan="5" ><center><table border="0" >
 	<tr><td colspan="2" ><br>
@@ -105,8 +110,6 @@ switch($action){
 	</td></tr>
 </table></center></td>
 </tr>
-<tr><td colspan="5" ><img src="tor.jpg" align="absmiddle" alt="Tor"> Hidden Service Chatserver<BR><a href="http://udgdahofbq52bzxk.onion" target="_blank">http://udgdahofbq52bzxk.onion</a><BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"  ><font size="2"> 0x21473D694D79F48F</font></td></tr>
-
 <tr><td colspan="5" ><?php if($issuer): ?>
 			<p><?php //print $subject; 
 				echo '<center>';

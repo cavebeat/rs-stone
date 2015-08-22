@@ -75,12 +75,18 @@ switch($action){
 	<tr><td colspan="5"><a href="https://retroshare.rocks/"><center><img src="retroshare-header.png" align="absmiddle" alt="RetroShare" ></td></tr>
 	<tr><td colspan="5"><center><b>Choose a Chatserver</b><BR><BR></center></td></tr>
 	<tr>
-		<td colspan="1"><a href="/copyleft/"><center><img src="copyleft.png" onmouseover="this.src='copyleft_color.png'" onmouseout="this.src='copyleft.png'" align="absmiddle" alt="copyleft" height="128" width="128"></a></center><center>Copyleft v06<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"><font size="2"> 0xA104CD8BA3CA7224</font></center></td>
-		<td colspan="1"><a href="/kopimi/"><center><img src="kopimi.png" onmouseover="this.src='kopimi_color.png'" onmouseout="this.src='kopimi.png'" align="absmiddle" alt="kopimi" height="128" width="128"></a></center><center>Kopimi v06<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"><font size="2"> 0xEF0FC8E21CFE3DCE</font></center></td>
-		<td colspan="1"><a href="/chatasaurus/"><center><img src="chatasaurus.png" onmouseover="this.src='chatasaurus_color.png'" onmouseout="this.src='chatasaurus.png'" align="absmiddle" alt="chatasaurus" height="128" width="128"></a></center><center>Chatasaurus v06<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"><font size="2"> 0x1AC6DD5267D432A0</font></center></td>
-		//<td colspan="1"><a href="/telecomix/"><center><img src="telecomix.png" onmouseover="this.src='telecomix_color.png'" onmouseout="this.src='telecomix.png'" align="absmiddle" alt="chatasaurus" height="128" width="128"></a></center><center>Chatserver v06<BR>Telecomix</center></td>
-		<td colspan="1"><a href="https://retrochat.piratenpartei.at/" target="_blank"><center><img src="pirate.png" onmouseover="this.src='pirate_color.png'" onmouseout="this.src='pirate.png'" align="absmiddle" alt="pirate" height="128" width="128"></a></center><center>RetroChat v05<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"><font size="2"> 0xD084EAAD7A00DF6E</font></center></td>
+		<td colspan="1"><a href="/copyleft/"><center><img src="copyleft.png" onmouseover="this.src='copyleft_color.png'" onmouseout="this.src='copyleft.png'" align="absmiddle" alt="copyleft" height="128" width="128"></a></center><center>Copyleft v06<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"  ><font size="2"> 0xA104CD8BA3CA7224</font><BR> <?php $path = 'isup/copyleft'; include 'status.php'; ?></center></td>
+
+		<td colspan="1"><a href="/kopimi/"><center><img src="kopimi.png" onmouseover="this.src='kopimi_color.png'" onmouseout="this.src='kopimi.png'" align="absmiddle" alt="kopimi" height="128" width="128"></a></center><center>Kopimi v06<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"  ><font size="2"> 0xEF0FC8E21CFE3DCE</font><BR> <?php $path = 'isup/kopimi'; include 'status.php'; ?></center></td>
+
+		<td colspan="1"><a href="http://107.150.3.74/w2c/gxs/"><center><img src="chatasaurus.png" onmouseover="this.src='chatasaurus_color.png'" onmouseout="this.src='chatasaurus.png'" align="absmiddle" alt="chatasaurus" height="128" width="128"></a></center><center>Chatasaurus v06<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"  ><font size="2"> 0x1AC6DD5267D432A0</font><BR> <?php $path = 'isup/chatasaurus'; include 'status.php'; ?></center></td>
+	
+	<td colspan="1"><a href="https://retrochat.piratenpartei.at/" target="_blank"><center><img src="pirate.png" onmouseover="this.src='pirate_color.png'" onmouseout="this.src='pirate.png'" align="absmiddle" alt="pirate" height="128" width="128"></a></center><center>PirateParty v06<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"  ><font size="2"> 0xD69260E2F99BD034</font><BR> <?php $path = 'isup/pirateparty'; include 'status.php'; ?>
+</center></td>
+
+	<td colspan="1"><a href="/telecomix/"><center><img src="telecomix.png" onmouseover="this.src='telecomix_color.png'" onmouseout="this.src='telecomix.png'" align="absmiddle" alt="telecomix" height="128" width="128"></a></center><center>Telecomix v06<BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"  ><font size="2"> 0x9494A9FACA7E7992</font><BR> <?php $path = 'isup/telecomix'; include 'status.php'; ?></center></td>
 	</tr>
+
 
 <tr>
 <td colspan="5" ><center><table border="0" >
@@ -90,7 +96,7 @@ switch($action){
 			<b>Open Port Check Tool</b>
 			<div>
 			<label>Your IP: </label><input name="ip" type="text" value="<?php print $ip; ?>"><BR>
-			<right><label>Port: </label></right>
+			<right><label>RS Port: </label></right>
 			<input name="port" type="text" value="<?php print $port; ?>"><BR>
 			<center><input type="submit" value="Check my Port" /></center>
 			</div>
@@ -99,13 +105,13 @@ switch($action){
 	</td></tr>
 </table></center></td>
 </tr>
-
+<tr><td colspan="5" ><img src="tor.jpg" align="absmiddle" alt="Tor"> Hidden Service Chatserver<BR><a href="http://udgdahofbq52bzxk.onion" target="_blank">http://udgdahofbq52bzxk.onion</a><BR><img src="gnupg.png" align="absmiddle" alt="GPG-ID" height="20" width="15"  ><font size="2"> 0x21473D694D79F48F</font></td></tr>
 
 <tr><td colspan="5" ><?php if($issuer): ?>
 			<p><?php //print $subject; 
 				echo '<center>';
-				print "<BR>" . "GPG-ID: " ."<img src='gnupg.png' align='absmiddle' alt='GPG-ID' height='20' width='15'>" ." 0x" . $gpgid . "<BR>";				
- 				echo "<font color='#00FF00'>" . "<B>"."Success: " . "</B>" . "</font>" . "I can see your service on " . "<B>". $ip. "</B>" . " on port (" ."<B>".$port. "</B>" .  ")"; 				print "<BR>" . "Your ISP is not blocking port " . $port ;				
+				print "<BR>" . "GPG-ID: "."<img src='gnupg.png' align='absmiddle' alt='GPG-ID' height='20' width='15'  >" ." 0x" . $gpgid . "<BR>";				
+ 				echo "<font color='#00FF00'>" . "<B>"."Success: " . "</B>" . "</font>" . "I can see your RetroShare on " . "<B>". $ip. "</B>" . " and port (" ."<B>".$port. "</B>" .  ")"; 				print "<BR>" . "Your ISP is not blocking port " . $port ;				
 				//if($user) print "<BR>"."User: " . $user;	
 				//if($location) print "<BR>" ."Location: " . $location;
 				echo '</center>';				
